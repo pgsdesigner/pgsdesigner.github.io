@@ -1,0 +1,363 @@
+@font-face {
+	font-family: perpetua;
+	src: url(Perpetua.ttf);
+}
+
+@font-face {
+	font-family: garamond-regular;
+	src: url(AGaramondPro-Regular.otf);
+}
+
+@font-face {
+	font-family: garamond-bold;
+	src: url(AGaramondPro-Bold.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+header {
+	position: relative;
+	top: 10%;
+	left: 0px;
+
+	width: 100vw;
+
+	padding-left: 13.11%;
+	padding-right: 13.11%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	display: inline-block;
+
+	font-family: perpetua;
+	font-size: 50px;
+	font-weight: lighter;
+
+	color: #2a4336;
+}
+
+.coming_soon {
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+}
+
+h2 {
+	display: inline-block;
+
+	font-family: garamond-bold;
+	font-size: 70px;
+
+	text-align: center;
+
+	line-height: 1;
+}
+
+header img {
+	float: right;
+}
+
+sup {
+	font-size: 13px;
+}
+
+.section {
+	position: relative;
+	left: 0;
+	top: 0;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: block;
+}
+
+.section_landing {
+	background-image: url(images/hero_v2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+span {
+	font-style: italic;
+}
+
+.section_2 {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-around;
+	align-items: center;
+}
+
+.cell_1 {
+	font-family: garamond-regular;
+	font-size: 17px;
+
+	text-align: center;
+}
+
+.cell_2 {
+	width: 43vw;
+}
+
+.cell_2 img {
+	width: 100%;
+}
+
+.cell_3 {
+	text-align: center;
+}
+
+.cell_3 h3 {
+	font-family: garamond-bold;
+	font-size: 40px;
+}
+
+
+.section_3 {
+	display: block;
+
+	height: 86vh;
+	width: 100vw;
+
+	text-align: center;
+}
+
+.text {
+	display: block;
+
+	font-family: garamond-regular;
+	font-size: 22px;
+
+	text-align: center;
+}
+
+.text p {
+	display: inline-block;
+	width: 30vw;
+}
+
+
+.section_3 img {
+	vertical-align: bottom;
+
+	margin-top: 13vh;
+
+	width: 30vw;
+}
+
+
+footer {
+	display: block;
+
+	width: 100vw;
+	height: 48vh;
+
+	background: #dfede4;
+
+	font-family: garamond-regular;
+	color: #2a4336;
+
+	padding: 3% 13.11%;
+}
+
+.footer_wrapper {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+footer h4 {
+	font-weight: lighter;
+	font-size: 30px;
+}
+
+input[type=text] {
+	display: block;
+
+	width: 15vw;
+	height: 35px;
+
+	padding-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+
+	background: transparent;
+	outline: none;
+	border: 1px solid #2a4336;
+}
+
+input[type=submit] {
+	text-align: left;
+
+	padding-left: 15px;
+	margin-bottom: 20px;
+
+	background: transparent;
+	width: 150px;
+	height: 25px;
+
+	border: 1px solid #2a4336;
+
+	-webkit-tap-highlight-color: red;
+}
+
+input[type=submit]:focus {
+	outline: none;
+}
+
+input[type=submit]:hover {
+	background: #2a4336;
+	color: #dfede4;
+
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+
+	align-items: flex-end;
+	justify-content: space-between;
+
+}
+
+.cell__1 img, .cell__1 p {
+	display: inline-block;
+}
+
+.cell__1 img {
+	margin-right: 15px;
+	transform: translateY(10px);
+
+	opacity: 0.7;
+}
+
+.cell__2 a {
+	color: #2a4336;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+	.text {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	h2 { font-size: 60px }
+	.section_3 img { margin-top: 10vh; }
+}
+
+@media screen and (max-width: 768px) {
+	.text p {
+		width: 50vw;}
+
+	.section_3 img {
+		width: 50vw;}
+
+	.cell_2 {
+		width: 60vw;}
+
+	.info p, .info a {
+		font-size: 14px;}
+}
+
+@media screen and (max-width: 414px) {
+	header h1 {
+		font-size: 30px;}
+
+	header img {
+		transform: scale(0.75) translateY(-35px);}
+
+	h2 {
+		font-size: 40px;}
+
+	.cell_2 {
+		width: 80vw;}
+
+	.text p {
+		width: 85vw;
+		font-size: 17px;}
+
+	.section_3 img {
+		width: 80vw;}
+
+	footer {
+		padding: 30px 10vw;
+
+		height: 55vh;}
+
+	.newsletter h4 {
+		font-size: 22px;}
+
+	input[type=text] {
+		width: 50vw;}
+
+	.cell__1 img {
+		width: 25%;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	header {
+		top: 5vh;
+		padding: 0 8vw;
+	}
+
+	h2 {
+	font-size: 30px;}
+
+	header img {
+		transform: scale(0.5) translate(50px, -50px);}
+
+	.cell_1 p {
+		font-size: 12px;}
+
+	.cell_2 {
+		width: 90vw;}
+
+	.cell_3 h3 {
+		font-size: 28px;
+	}
+
+	.text p {
+		width: 90vw;
+		font-size: 12px;
+	}
+
+	.section_3 img  {
+		width: 90vw;
+	}
+}
+
+
+
+
+
+
+
+
