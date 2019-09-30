@@ -321,6 +321,8 @@ input[type=submit]:hover {
 	h2 {
 		font-size: 40px;}
 
+	sup {font-size: 4px;}
+
 
 	.cell_1 p {width: 50vw;}
 
