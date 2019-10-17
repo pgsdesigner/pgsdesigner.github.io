@@ -49,14 +49,13 @@ a {
 	text-decoration: none;
 }
 
-h1 {
+.logo {
+	float: left;
+}
+
+.logo img {
 	display: inline-block;
-
-	font-family: perpetua;
-	font-size: 3.75em;
-	font-weight: lighter;
-
-	color: #2a4336;
+	width: 120px;
 }
 
 p {
@@ -84,9 +83,13 @@ h2 {
 	line-height: 1;
 }
 
-header img {
-	width: 90px;
+.znak {
 	float: right;
+}
+
+.znak img {
+	transform: translateY(-10px);
+	width: 90px;
 }
 
 sup {
@@ -202,6 +205,11 @@ input[type=text] {
 	background: transparent;
 	outline: none;
 	border: 1px solid #2a4336;
+
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 input[type=submit] {
@@ -215,18 +223,20 @@ input[type=submit] {
 
 	border: none;
 
-	-webkit-tap-highlight-color: none;
-
 	-webkit-border-radius: 0;
-
-	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 input[type=submit]:focus {
 	outline: none;
 	border-radius: 0;
 
-	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 input[type=submit]:hover {
@@ -235,7 +245,10 @@ input[type=submit]:hover {
 	border-radius: 0;
 	-webkit-border-radius: 0;
 
-	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 
 }
 
@@ -246,6 +259,7 @@ input[type=submit]:hover {
 	align-items: flex-end;
 	justify-content: space-between;
 
+	font-family: roboto;
 }
 
 .cell__1 img, .cell__1 p {
@@ -282,12 +296,15 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 1024px) {
 	header, .coming_soon {font-size: 80%;}
-	header img {width: 65px;}
+	.logo img {width: 90px;}
+	.znak img {width: 65px;}
 
 	.team_img img {width: 40vw;}
 }
 
 @media screen and (max-width: 768px) {
+	.section_landing {background-position: right}
+
 	.product_img img, .team_img img {width: 60vw;}
 	.txt_2 p {width: 55vw;}
 
@@ -314,7 +331,8 @@ input[type=submit]:hover {
 @media screen and (max-width: 414px) {
 	header {top: 5%; padding-left: 5vw; padding-right: 5vw;}
 
-	header img {width: 50px;}
+	.logo img {width: 70px;}
+	.znak img {width: 50px;}
 	body {font-size: 80%;}
 
 
@@ -341,8 +359,12 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 320px) {
 	header {font-size: 70%;}
-	header img {width: 39px;}
+
+	.logo img {width: 55px;}
+	.znak img  {width: 39px;}
 	.coming_soon {font-size: 54%;}
+
+	.txt_1 p {width: 85vw;}
 }
 
 
