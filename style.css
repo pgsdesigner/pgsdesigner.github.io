@@ -346,7 +346,7 @@ input[type=submit]:hover {
 	}
 
 	h4 {width: 50vw;}
-	.coming_soon {font-size: 73%;}
+	.coming_soon {font-size: 73%; width: 65vw;}
 }
 
 @media screen and (max-width: 375px) {
