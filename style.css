@@ -342,7 +342,7 @@ input[type=submit]:hover {
 @media screen and (max-width: 320px) {
 	header {font-size: 70%;}
 	header img {width: 39px;}
-	.coming_soon {font-size: 56%;}
+	.coming_soon {font-size: 54%;}
 }
 
 
