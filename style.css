@@ -228,7 +228,7 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 
 @media screen and (max-width: 320px) {
 	body {font-size: 55%;}
-	.wrapper {background: red; margin-right: 30px;}
+	.wrapper {margin-right: 30px;}
 	.row1 {
 		margin-top: 35vh;
 	}
