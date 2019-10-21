@@ -212,7 +212,10 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 }
 
 @media screen and (max-width: 414px) {
+	body {font-size: 58%;}
 	.wrapper {padding: 15px;}
+	.scroll-container {padding-right: 15px;}
+	.kontakt {margin-right: 0px;}
 	header {left: 15px; top: 15px;}
 	.logo {right: 15px; top: 15px;}
 	.lang {bottom: 15px; left: 15px;}
@@ -224,6 +227,8 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 }
 
 @media screen and (max-width: 320px) {
+	body {font-size: 55%;}
+	.wrapper {background: red; margin-right: 30px;}
 	.row1 {
 		margin-top: 35vh;
 	}
