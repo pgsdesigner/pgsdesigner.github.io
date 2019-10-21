@@ -85,16 +85,6 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 	left: 50px;
 }
 
-.copy {
-	visibility: hidden;
-
-	font-size: 0.5em;
-
-	position: fixed;
-	bottom: 50px;
-	right: 25%;
-}
-
 					.slika, .img_about {
 						z-index: -100;
 
@@ -120,7 +110,7 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 }
 
 .row2 {
-	margin-top: 5vh;
+	margin-top: 6vh;
 }
 
 .row3, .row4, .kontakt {
@@ -214,8 +204,8 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 
 @media screen and (max-width: 414px) {
 	body {font-size: 58%;}
-	.scroll-container {padding: 15px;}
-	.kontakt {margin-right: 0px; margin-bottom: 0px; margin-left: 1px;}
+	.scroll-container:not(.kontakt) {padding: 15px;}
+	.kontakt {margin-right: 0px; margin-bottom: 0px; margin-left: 0px;}
 	header {left: 15px; top: 15px;}
 	.logo {right: 15px; top: 15px;}
 	.lang {bottom: 15px; left: 15px;}
