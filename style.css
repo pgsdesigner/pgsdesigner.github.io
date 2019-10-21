@@ -33,7 +33,6 @@ body {
   right: 0;
   bottom: 0;
 
-	padding: 50px;
 }
 
 a, h1 {
@@ -147,10 +146,10 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 }
 
 .kontakt {
-	padding-top: 50px;
-	margin-right: 30px;
-
 	height: 100vh;
+
+	padding-top: 50px;
+	margin-bottom: -50px;
 
 	position: relative;
 	z-index: 1000;
@@ -172,6 +171,8 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 
   backface-visibility: hidden;
   transform-style: preserve-3d;
+
+  padding: 50px;
 }
 
 
@@ -188,7 +189,7 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 
 @media screen and (max-width: 768px) {
 	body {font-size: 65%;}
-	.wrapper {padding: 30px;}
+	.scroll-container {padding: 30px;}
 	header {left: 30px; top: 30px;}
 	.logo {right: 30px; top: 30px;}
 	.lang {bottom: 30px;}
@@ -213,9 +214,8 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 
 @media screen and (max-width: 414px) {
 	body {font-size: 58%;}
-	.wrapper {padding: 15px;}
-	.scroll-container {padding-right: 15px;}
-	.kontakt {margin-right: 0px;}
+	.scroll-container {padding: 15px;}
+	.kontakt {margin-right: 0px; margin-bottom: 0px; margin-left: 1px;}
 	header {left: 15px; top: 15px;}
 	.logo {right: 15px; top: 15px;}
 	.lang {bottom: 15px; left: 15px;}
@@ -228,7 +228,6 @@ header a:hover, .lang a:hover, .kontakt a:hover {
 
 @media screen and (max-width: 320px) {
 	body {font-size: 55%;}
-	.wrapper {margin-right: 30px;}
 	.row1 {
 		margin-top: 35vh;
 	}
