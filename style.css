@@ -1,16 +1,11 @@
 @font-face {
-	font-family: fakt-bold;
-	src: url(FaktPro-Bold.otf);
-}
-
-@font-face {
-	font-family: fakt;
-	src: url(FaktPro-Normal.otf);
+	font-family: arialnarrow;
+	src: url(Arial Narrow.eot);
 }
 
 * {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
@@ -19,223 +14,113 @@
 }
 
 body {
-	font-size: 85%;
+	background: rgb(210, 208, 205);
 	overflow-x: hidden;
 }
 
-.wrapper {
-  overflow: hidden;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-}
-
-a, h1 {
-	color: black;
-	font-family: fakt;
-}
-
-p {
-	font-size: 1.7em;
-	line-height: 1.1;
-
-	font-family: fakt;
-}
-
-header {
-	position: fixed;
-	left: 50px;
-	top: 50px;
-
-	z-index: 1;
-}
-
-header a, .lang a, .kontakt a {
-	display: block;
-
-	font-size: 2em;
-	line-height: 1.1;
-}
-
-header a:hover, .lang a:hover, .kontakt a:hover {
+a {
 	text-decoration: none;
 	color: black;
 }
 
+p, a {
+	font-family: arialnarrow;
+	font-size: 20px;
+}
+
+#mail {cursor: pointer;}
+
 .logo {
+	width: 250px;
+
 	position: fixed;
-	top: 50px;
+	bottom: 25px;
 	right: 50px;
 
-	height: 25px;
 }
 
 .logo img {
-	height: 100%;
+	width: 100%;
+	opacity: 0.85;
 }
 
-.lang {
+.contact {
 	position: fixed;
-	bottom: 50px;
+	bottom: 25px;
 	left: 50px;
 }
 
-					.slika, .img_about {
-						z-index: -100;
-
-					}
-
-.slika img {
-	width: 100%;
-	margin-top: 7vh;
-
-	z-index: -100;
+.left {
+	float: left;
 }
 
-
-/* O NAMA */
-
-
-.img_about img, .ploca img, .img_furniture img {
-	width: 100%;
+.right {
+	float: left;
+	margin-left: 100px;
 }
 
-.txt_about, .img_furniture {
-	margin-top: 11vh;
+.right a {
+	display: block;
 }
 
-.row2 {
-	margin-top: 6vh;
-}
+@media screen and (max-width: 871px) {
+	.logo {
+		width: 150px;
 
-.row3, .row4, .kontakt {
-	margin-top: 10vh;
-}
-
-.row8, .row7, .row5 {
-	margin-top: 30vh;
-}
-
-.txt_ploce {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-}
-
-.row6 img {
-	position: relative;
-	z-index: 100;
-}
-
-.txt_eco {
-	margin-top: 10vh;
-}
-
-.kontakt {
-	height: 100vh;
-
-	padding-top: 50px;
-	margin-bottom: -50px;
-
-	position: relative;
-	z-index: 1000;
-	background: #eec52a;
-}
-
-
-
-.anchor_color {
-	color: #eec52a;
-}
-
-.normal {color: black;}
-
-.scroll-container {
-	  position: absolute;
-  overflow: hidden;
-  z-index: 10;
-
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-
-  padding: 50px;
-}
-
-
-@media screen and (min-width: 1921px) {
-	body {font-size: 100%;}
-}
-@media screen and (max-width: 1024px) {
-	body {font-size: 70%;}
-
-	.row8, .row7, .row5 {
-	margin-top: 20vh;
-}
-}
-
-@media screen and (max-width: 768px) {
-	body {font-size: 65%;}
-	.scroll-container {padding: 30px;}
-	header {left: 30px; top: 30px;}
-	.logo {right: 30px; top: 30px;}
-	.lang {bottom: 30px;}
-	.txt_ploce {margin: 1.5vh 0;}
-
-	.row3, .row4, .kontakt {
-	margin-top: 6vh;
+		right: 35px;
+		bottom: 18px;
 	}
 
-	.row8, .row7, .row5 {
-		margin-top: 15vh;
+	.contact {
+		left: 35px;
+		bottom: 18px;
 	}
 
-	.txt_eco {
-		margin-top: 5vh;
-	}	
+	p, a {font-size: 15px;}
 
-	.txt_about, .img_furniture {
-		margin-top: 5vh;
-	}
 }
 
-@media screen and (max-width: 414px) {
-	body {font-size: 58%;}
-	.scroll-container:not(.kontakt) {padding: 15px;}
-	.kontakt {margin-right: 0px; margin-bottom: 0px; margin-left: 0px;}
-	header {left: 15px; top: 15px;}
-	.logo {right: 15px; top: 15px;}
-	.lang {bottom: 15px; left: 15px;}
+@media screen and (max-width: 650px) {
+	.logo {
+		width: 100px;
 
-	.row1 {margin-top: 25vh;}
-	.row2 {margin-top: 20vh;}
+		right: 35px;
+		bottom: 18px;
+	}
 
-	.logo {height: 15px;}
+	.contact {
+		left: 35px;
+		bottom: 18px;
+	}
+
+	p, a {font-size: 14px;}
+
+	.right {
+		margin-left: 65px;
+	}
+
 }
 
-@media screen and (max-width: 320px) {
-	body {font-size: 55%;}
-	.row1 {
-		margin-top: 35vh;
+@media screen and (max-width: 450px) {
+	.left, .right {
+		float: none;
 	}
-	.row2 {
-		margin-top: 20vh;
+
+	.right {
+		margin-left: 0;
+	}
+
+	.contact {
+		left: 25px;
+	}
+
+	.logo {
+		width: 120px;
+
+		top: 18px;
+		left: 25px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
