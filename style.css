@@ -1,6 +1,6 @@
 @font-face {
-	font-family: arial-n;
-	src: url(Arial Narrow.ttf);
+	font-family: 'arialnar';
+	src: url('Arial Narrow.ttf');
 }
 
 * {
@@ -24,7 +24,7 @@ a {
 }
 
 p, a {
-	font-family: arial-n;
+	font-family: 'arialnar';
 	font-size: 20px;
 }
 
